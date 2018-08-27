@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>        
+    <input id="first-number" type="number" value="0" placeholder="第一个数字">
+    <input id="second-number" type="number" value="0" placeholder="第二个数字">
+    <button id="add-btn">加</button>
+    <button id="minus-btn">减</button>
+    <button id="times-btn">乘</button>
+    <button id="divide-btn">除</button>
+    <p id="result">运算结果</p>
+    <p id="demo"></p>
+
+    <script>
+
+        var a = document.getElementById("first-number");
+        var b = document.getElementById("second-number");
+        var result = document.getElementById("result");
+
+        var add = document.getElementById("add-btn");
+        add.onclick = function(){
+            result.innerHTML = parseInt(a.value)+parseInt(b.value)
+        }
+
+        var minus = document.getElementById("minus-btn");
+        minus.onclick = function(){
+            result.innerHTML = parseInt(a.value)-parseInt(b.value)
+        }
+
+        var times = document.getElementById("times-btn");
+        times.onclick = function(){
+            result.innerHTML = parseInt(a.value)*parseInt(b.value)
+        }
+
+        var divide = document.getElementById("divide-btn");
+        divide.onclick = function(){
+            result.innerHTML = parseInt(a.value)/parseInt(b.value)
+        }
+
+
+    </script>
+</body>
+</html>
